@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vuela Moda - Registro de Clientas</title>
+    <link rel="stylesheet" href="_css/style.css">
+</head>
+<body>
+    <header>
+        <h1>FORMULARIO SENA</h1>
+        <p class="slogan">CRACIAS POR DEJAR SUS DATOS</p>
+    </header>
+    <main>
+        <section>
+            <form id="registrationForm">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ej: Ana Martínez" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]{3,40}" autofocus>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required placeholder="Ej: ana@email.com">
+
+                <label for="telefono">Edad:</label>
+                <input type="tel" id="telefono" name="telefono" required placeholder="Ej: 30" pattern="[0-9]{1,2}">
+
+                <label for="talla">Talla preferida:</label>
+                <select id="talla" name="talla" required>
+                    <option value="">Selecciona tu talla</option>
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XL">XXL</option>
+                </select>
+
+                <label for="prenda">Prenda favorita:</label>
+                <select id="prenda" name="prenda" required>
+                    <option value="">Selecciona una prenda</option>
+                    <option value="Blusas">Blusas</option>
+                    <option value="Vestidos">Vestidos</option>
+                    <option value="Pantalones">Pantalones</option>
+                    <option value="Faldas">Faldas</option>
+                    <option value="Chaquetas">Chaquetas</option>
+                </select>
+
+                <label for="comentarios">¿Algun comentario o sugerencia?</label>
+                <textarea id="comentarios" name="comentarios" rows="3" placeholder="Por favor introduzca su comentario"></textarea>
+
+                <input type="reset" value=" Limpiar">
+                <input type="submit" value=" Registrarme">
+            </form>
+            <div id="result"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Vuela Moda. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
